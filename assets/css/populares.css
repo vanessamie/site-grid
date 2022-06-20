@@ -1,0 +1,72 @@
+/*----- POPULARES -----*/
+.populares__cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.populares__botao {
+    border: none;
+}
+
+.populares__conteudo{
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: conteudo;
+    padding: 1rem;
+}
+
+.populares {
+    padding: 3rem 0;
+}
+
+.populares__card {
+    display: grid;
+    grid-template-areas:
+        "card-imagem"
+        "card-corpo";
+    grid-template-columns: 100%;
+    grid-template-rows: 200px auto;
+    background: #fdfdfd;
+    text-align: justify;
+}
+
+.populares__card___imagem {
+    grid-area: card-imagem;
+    height: 100%;
+    width: 100%;
+}
+
+.populares__card___corpo {
+    display: grid;
+    grid-row-gap: 0.5rem;
+    grid-area: card-corpo;
+    grid-template-areas: 
+        "card-cabecalho"
+        "card-conteudo";
+    grid-template-rows: 50px auto;
+    padding: .75rem;
+}
+
+.populares__card___titulo {
+    font-size: 2rem;
+    color: #333333;
+    padding-left: 1rem;
+
+}
+
+.populares__card___data {
+    font-size: 1.5rem;
+    color: #787878;
+    padding: 1rem;
+
+}
+
+.populares__card___descricao {
+    font-size: 1.5rem;
+    color: #333333;
+    margin-top: 1rem;
+    padding: 1rem;
+}
